@@ -10,7 +10,8 @@ from algorithms.sorting import utils
 
 
 def stooge_sort(array):
-  return _stooge_sort_impl(array, 0, len(array))
+  _stooge_sort_impl(array, 0, len(array))  # Sorted in-place.
+  return array
 
 
 def _stooge_sort_impl(array, i, j):
@@ -25,5 +26,3 @@ def _stooge_sort_impl(array, i, j):
     _stooge_sort_impl(array, i, i + gap)
     _stooge_sort_impl(array, j - gap, j)
     _stooge_sort_impl(array, i, i + gap)
-
-  return array
