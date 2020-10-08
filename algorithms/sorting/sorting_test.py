@@ -8,11 +8,13 @@ from algorithms.sorting.bubble import bubble_sort
 from algorithms.sorting.gnome import gnome_sort
 from algorithms.sorting.insertion import insertion_sort
 from algorithms.sorting.merge import merge_sort
+from algorithms.sorting.stooge import stooge_sort
 
 _SORTING_ALGORITHMS = [('bubble_sort', bubble_sort),
                        ('gnome_sort', gnome_sort),
                        ('insertion_sort', insertion_sort),
-                       ('merge_sort', merge_sort)]
+                       ('merge_sort', merge_sort),
+                       ('stooge_sort', stooge_sort)]
 
 _TEST_100_ELEM_DATA = [
   ('case_0', [63, 90, 45, 50, 81, 46, 6, 3, 41, 85, 74, 72, 19, 43, 88, 51, 0,
