@@ -10,6 +10,7 @@ from algorithms.sorting import utils
 
 
 def stooge_sort(array):
+  utils.check_array(array)
   _stooge_sort_impl(array, 0, len(array))  # Sorted in-place.
   return array
 

@@ -5,6 +5,7 @@ from algorithms.sorting import utils
 
 def basic_bubble_sort(array):
   """Basic implementation of bubble sort."""
+  utils.check_array(array)
   for i in reversed(range(len(array))):
     for j in range(i):
       if array[j] > array[j + 1]:
@@ -18,6 +19,7 @@ def bubble_sort(array):
   The worst case is the same as the basic version, but in case the array is
   sorted after several passes, this variant is able to terminate early.
   """
+  utils.check_array(array)
   end = len(array)
   while True:
     new_end = 0

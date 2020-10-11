@@ -1,7 +1,10 @@
 """Implementation of merge sort."""
 
+from algorithms.sorting import utils
+
 
 def merge_sort(array):
+  utils.check_array(array)
   length = len(array)
   if length <= 1:
     return array  # Already sorted.

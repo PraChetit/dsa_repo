@@ -4,6 +4,7 @@ import itertools
 from absl.testing import absltest
 from absl.testing import parameterized
 
+from algorithms.sorting import utils
 from algorithms.sorting.bubble import bubble_sort
 from algorithms.sorting.bubble import basic_bubble_sort
 from algorithms.sorting.comb import comb_sort
@@ -171,6 +172,11 @@ class SortingTest(parameterized.TestCase):
   def test_example_100_elem_array(self, sort_alg, test_case):
     sorted_array = list(range(100))
     self._test(sort_alg, test_case(), sorted_array)
+
+  @parameterized.named_parameters(_SORTING_ALGORITHMS)
+  def test_not_array_raises(self, sort_alg):
+    with self.assertRaises(utils.NotArrayError):
+      sort_alg((0, 1, 2))  # Tuple is not a list.
 
 
 if __name__ == '__main__':

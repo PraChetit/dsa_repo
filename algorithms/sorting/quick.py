@@ -6,6 +6,7 @@ from algorithms.sorting import utils
 
 
 def quick_sort(array):
+  utils.check_array(array)
   _quick_sort_impl(array, 0, len(array))  # Sorted in-place.
   return array
 

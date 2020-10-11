@@ -8,6 +8,7 @@ _GAPS = [1532158938, 680959528, 302648679, 134510524, 59782455, 26569980,
 
 
 def shell_sort(array):
+  utils.check_array(array)
   length = len(array)
 
   for gap in _GAPS:

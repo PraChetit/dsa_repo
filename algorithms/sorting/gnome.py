@@ -4,6 +4,7 @@ from algorithms.sorting import utils
 
 
 def gnome_sort(array):
+  utils.check_array(array)
   idx = 0
   length = len(array)
   while idx < length:

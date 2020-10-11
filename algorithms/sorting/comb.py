@@ -7,6 +7,7 @@ from algorithms.sorting import utils
 
 def comb_sort(array, shrink_factor=1.3):
   """Optimized implementation of bubble sort."""
+  utils.check_array(array)
   length = len(array)
   gap = length
   already_done = False
