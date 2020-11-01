@@ -15,6 +15,7 @@ from algorithms.sorting.merge import merge_sort
 from algorithms.sorting.quick import quick_sort
 from algorithms.sorting.shell import shell_sort
 from algorithms.sorting.stooge import stooge_sort
+from algorithms.sorting.tree import tree_sort
 
 _SORTING_ALGORITHMS = [('bubble_sort', bubble_sort),
                        ('basic_bubble_sort', basic_bubble_sort),
@@ -25,7 +26,8 @@ _SORTING_ALGORITHMS = [('bubble_sort', bubble_sort),
                        ('merge_sort', merge_sort),
                        ('quick_sort', quick_sort),
                        ('shell_sort', shell_sort),
-                       ('stooge_sort', stooge_sort)]
+                       ('stooge_sort', stooge_sort),
+                       ('tree_sort', tree_sort)]
 
 # This creates no-arg function returning test cases. If global constants were
 # directly provided, in-place sorting algorithms could cause trouble by
